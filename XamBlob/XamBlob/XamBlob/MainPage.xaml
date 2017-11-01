@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamBlob"
+             x:Class="XamBlob.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="HandleAddClicked"/>
+        <ToolbarItem Text="Refresh" Clicked="HandleRefreshClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout x:Name="rootLayout">
+        <StackLayout Orientation="Horizontal" HeightRequest="100">
+            <ActivityIndicator x:Name="activity"/>
+            <Label x:Name="txtStatus" VerticalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
